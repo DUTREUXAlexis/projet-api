@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pays{% endblock %}
+
+{% block body %}
+<main class="container" style="">
+    <div class="mx-auto">
+        <div class="row row-cols-1 row-cols-md-5 g-4" >
+        <div class="card" >
+            <img class="card-img-top" src="{{ data.0.flags.png }}" alt="Card image cap">
+            <div class="card-body mx-auto text-center">
+                <h5 class="card-title">{{ data.0.name.common }}</h5>
+                <p class="card-text">Continent : {{ data.0.region }}</p>
+                <p class="card-text">Langue : {{ lang.1 }}</p>
+                <p class="card-text"><span class="badge bg-warning text-dark">{{ data.0.population }}</span></p>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+
+
+{% endblock %}
